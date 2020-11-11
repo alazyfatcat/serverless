@@ -1,6 +1,6 @@
 let posArray = [0, 0];
 exports.handler = async (event) => {
-  const pos = event.queryStringParameters.latitude && event.queryStringParameters.longitude ;
+  const pos = event.queryStringParameters.lat && event.queryStringParameters.lng ;
   
   console.log(JSON.stringify(posArray));
 
