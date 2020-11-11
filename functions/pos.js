@@ -1,9 +1,9 @@
 let posArray = [0, 0];
 exports.handler = async (event) => {
-  const pos = event.queryStringParameters.lat && event.queryStringParameters.lng ;
+  const lat = event.queryStringParameters.lat;
   
   console.log(JSON.stringify(posArray));
-
+  
   return {
     statusCode: 200,
     headers: { "Access-Control-Allow-Origin": "*" },
